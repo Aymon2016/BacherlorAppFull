@@ -1,0 +1,46 @@
+@import '../../scssFoundation/color';
+@import '../../scssFoundation/typography';
+
+.logobar {
+    height: 50px;
+    background-color: $div-bg-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $spacing-sm;
+
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-family: $body-font-family;
+        font-size: $h-5-font-size;
+        font-weight: $h-5-font-weight;
+        border-radius: 5px;
+        padding:5px 10px;
+        background-color: $btn-primary-bg-color;;
+        a {
+            color: $body-text-color;
+        text-decoration: none;
+        }
+        
+        cursor: pointer;
+        &:hover {
+                animation: nav-animation 1s ease;
+                background-color: $btn-primary-bg-hover;
+        }
+    }
+}
+.logo {
+    img{
+        width: 50px;
+        height: 90%;
+    }
+}
+.name {
+    font-family: $body-font-family;
+    font-size: $h-1-font-size;
+    font-weight: $h-4-font-weight;
+}
+

@@ -1,0 +1,33 @@
+
+@import './variable';
+
+/*=============================================
+=            Global text colors               =
+=============================================*/
+
+$body-text-color: $dark !default;
+$body-bg-color:  $white !default;
+$nav-bg-color:$dark-light !default;
+$div-bg-color:  $white-dark !default;
+
+/*=====  End of Text Color  ======*/
+
+/*=============================================
+=                   Buttons                   =
+=============================================*/
+
+$btn-primary-color: $white !default;
+$btn-primary-bg-color:  $green !default;
+$btn-primary-bg-hover:  $green-light !default;
+$nav-bg-hover:  $dark-light !default;
+
+/*=====  End of Buttons  ======*/
+
+
+/*=============================================
+=            text color            =
+=============================================*/
+
+$body-text-color:$dark;
+
+/*=====  End of text color  ======*/

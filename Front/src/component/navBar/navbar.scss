@@ -1,0 +1,54 @@
+@import '../../scssFoundation/color';
+@import '../../scssFoundation/typography';
+.navbar {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(215, 213, 213);
+    border-radius: 1px 5px 5px 1px;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        transition: all 1s ease;
+        li{
+          
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+            font-family: $body-font-family;
+            font-size: $h-5-font-size;
+            font-weight: $h-5-font-weight;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: $btn-primary-bg-color;
+           
+            a {
+             color: $body-text-color;
+            text-decoration: none;
+           }
+            
+            cursor: pointer;
+            &:hover {
+                  animation: nav-animation 1s ease;
+                 background-color: $btn-primary-bg-hover;
+            }
+            }
+           
+    }
+    
+}
+@keyframes nav-animation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

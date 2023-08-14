@@ -1,0 +1,111 @@
+//user endpoint
+POST http://localhost:8000/api/v1/users/register
+Content-Type: application/json
+
+{
+    "userID":"AYMON1",
+    "name": "aymon",
+    "email": "aymon201@gmail.com",
+    "password": "aymon123",
+    "confirmPassword":"aymon123"
+}
+
+###
+
+POST http://localhost:8000/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email": "aymon201@gmail.com",
+    "password": "aymon123"
+}
+
+###
+GET  http://localhost:8000/api/v1/users
+###
+
+GET  http://localhost:8000/api/v1/users/authenticate
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYXltb24iLCJlbWFpbCI6ImF5bW9uMjAxQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY5MTMwOTk5MCwiZXhwIjoxNjkxMzE3MTkwfQ.Y0lGclsB_nNZ-PEr1-QGfcOeSrCVmAeBSy5qSjBFY20"
+
+
+// notice endpoint
+###
+POST http://localhost:8000/api/v1/notices
+Content-Type: application/json
+
+{
+    "title": "this is first notice",
+    "noticeBody": "aymon20199@gmail.com"
+}
+
+###
+
+GET  http://localhost:8000/api/v1/notices/
+###
+
+GET  http://localhost:8000/api/v1/notices/gGXvmAXn2
+
+###
+
+DELETE   http://localhost:8000/api/v1/notices/6APQ6mR5c
+
+
+//product endpoin
+productName, price, userID, createAt
+###
+
+POST http://localhost:8000/api/v1/products
+Content-Type: application/json
+
+{
+    "productName": "moris",
+    "price": "200",
+    "userID": "1004"
+}
+
+###
+
+GET  http://localhost:8000/api/v1/products/
+
+
+###
+
+DELETE   http://localhost:8000/api/v1/products/4XOBJ8tO8
+
+###
+
+GET  http://localhost:8000/api/v1/products/uI8s7rt94
+
+###
+
+GET  http://localhost:8000/api/v1/:{aymon123}/products
+
+
+//mill enpoint
+###
+
+POST http://localhost:8000/api/v1/mills/
+Content-Type: application/json
+
+{
+    "date": "2",
+    "quantity":"2",
+    "authorID":"1001",
+    "userID": "1001"
+}
+###
+
+GET  http://localhost:8000/api/v1/mills/
+
+###
+
+DELETE   http://localhost:8000/api/v1/mills/TTGhQKNEW
+
+###
+GET  http://localhost:8000/api/v1/mills/aymon123
+
+###
+GET  http://localhost:8000/api/v1/users/logout
+
+###
+GET http://localhost:8000/api/v1/users/info/AYMON1

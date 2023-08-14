@@ -1,0 +1,60 @@
+@import '../../scssFoundation/color';
+@import '../../scssFoundation/typography';
+@import '../../scssFoundation/variable';
+.container {
+  width: 75%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.productlist {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 10px 10px;
+    }
+
+.productlist ul {
+    list-style: none;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    padding: 20px 0px;
+    
+    .Title {
+        text-align: center;
+        font-family: $body-font-family;
+        font-size: $h-1-font-size;
+        font-weight: $h-4-font-weight;
+    }
+    .product{
+       height: 30px;
+       white-space: nowrap;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 0px 0px 0px 10px;
+        font-family: "Roboto", sans-serif;
+        border: 1px solid rgb(233, 233, 233);
+        border-radius: 5px;
+        h5{
+            overflow-x: hidden;
+            margin-right: 5px;
+        }
+    }
+}
+@keyframes news-animation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
