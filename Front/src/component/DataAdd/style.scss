@@ -1,17 +1,7 @@
 
 
-
-.Auth-form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0px 20px;
- 
-}
-
 .Auth-form {
-  width: 420px;
+  
   box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
   padding-top: 30px;
   padding-bottom: 20px;
@@ -20,6 +10,9 @@
 }
 
 .Auth-form-content {
+  height: 350px;
+  display:block;
+  overflow-y: scroll;
   padding-left: 12%;
   padding-right: 12%;
 }
@@ -36,4 +29,11 @@ label {
   font-size: 14px;
   font-weight: 600;
   color: rgb(34, 34, 34);
+}
+ 
+  
+@media(min-width:530px){
+  .Auth-form {
+    width: 420px;
+  }
 }

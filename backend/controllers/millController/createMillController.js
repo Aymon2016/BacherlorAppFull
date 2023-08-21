@@ -8,7 +8,7 @@ const millCollection = require('../../services/millServices/millServices')
 
 const createMillController = async (req, res) => {
 
-    let { date, quantity, authorID, userID } = req.body
+    let { date, quantity, authorID, userID } = JSON.parse(req.body.body)
 
     const createAt = await getFullDate()
 

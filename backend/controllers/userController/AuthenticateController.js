@@ -7,7 +7,6 @@ const AuthenticateController = async (req, res) => {
     let token = req.headers.authorization;
     token = token.split(" ")[1]
 
-    console.log(token)
 
     if (!token) {
         return res.status(401).json({ message: 'Unauthorized' });

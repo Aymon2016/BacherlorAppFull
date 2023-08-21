@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigation } from "react-router-dom"
 import React, { useState } from "react"
 import './login.scss'
 import axios from 'axios'
@@ -6,7 +6,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 
 const Signup = () => {
-
 
     const URL = import.meta.env.VITE_backendurl
 
@@ -122,7 +121,7 @@ const Signup = () => {
         <div className="Auth-form-container">
             <form method="post" className="Auth-form">
                 <div className="Auth-form-content">
-                    <h3 className="Auth-form-title">Sign In</h3>
+                    <h3 className="Auth-form-title">Sign Up</h3>
                     <div className="text-center">
                         Already registered?{" "}
                         <span className="link-primary">

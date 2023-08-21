@@ -17,7 +17,7 @@ const MemberPage = () => {
         async function fetchData() {
             const token = localStorage.getItem('userToken');
             const decodedToken = jwtDecode(token);
-            console.log(decodedToken)
+
             const { userID } = decodedToken;
 
             await axios.get(URL + `/api/v1/${userID}/products`)
@@ -36,7 +36,7 @@ const MemberPage = () => {
     if (!product) return
 
     return (
-        <div className="container">
+        <div className="container" id='container'>
             <div className='productlist'>
                 <ul>
                     <div className="Title">Product List</div>

@@ -10,8 +10,8 @@ const deleteMillController = require('../../controllers/millController/deleteMil
 // const authenticationMidleware = require('../../middlewares/authentication/authentication')
 
 
-router.post('/mills/', createMillController)
-router.get('/mills/', getAllMillContoller)
+router.post('/mills', createMillController)
+router.get('/mills', getAllMillContoller)
 router.get('/:authorID/mills', getOneUserMillController)
 router.delete('/mills/:id', deleteMillController)
 

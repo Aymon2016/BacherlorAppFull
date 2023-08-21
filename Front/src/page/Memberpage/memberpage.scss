@@ -1,7 +1,7 @@
 @import '../../scssFoundation/color';
 @import '../../scssFoundation/typography';
 @import '../../scssFoundation/variable';
-.container {
+#container {
   width: 75%;
   height: calc(100vh - 60px);
   display: flex;

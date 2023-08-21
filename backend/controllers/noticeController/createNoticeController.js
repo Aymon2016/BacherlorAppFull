@@ -6,7 +6,7 @@ const noticeCollection = require('../../services/noticeServices/noticeServices')
 
 const createNoticeController = async (req, res) => {
 
-    let { title, noticeBody } = req.body
+    let { title, noticeBody } = JSON.parse(req.body.body)
     const date = await getFullDate()
     let validate = createValidator({ date, title, noticeBody })
 

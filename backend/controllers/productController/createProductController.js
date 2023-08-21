@@ -8,7 +8,7 @@ const productCollection = require('../../services/productServices/productService
 
 const createNoticeController = async (req, res) => {
 
-    let { productName, price, userID } = req.body
+    let { productName, price, userID } = JSON.parse(req.body.body)
 
 
     const createAt = await getFullDate()
